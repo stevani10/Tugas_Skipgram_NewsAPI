@@ -22,7 +22,7 @@ Variasi yang digunakan: 50, 100, 200.
 - Jumlah Epoch
 Model dilatih selama 5 epoch dengan batch size 4 untuk memastikan konvergensi.
 - Sumber Data
-Data dikumpulkan dari NewsAPI, difilter berdasarkan topik tertentu (contoh: "bitcoin").
+Data dikumpulkan dari NewsAPI, difilter berdasarkan topik tertentu (contoh: "technology").
 
 ### Hasil Analisis dan Kesimpulan
 Setelah melatih model dengan berbagai kombinasi parameter, berikut adalah temuan utama:
@@ -30,5 +30,6 @@ Setelah melatih model dengan berbagai kombinasi parameter, berikut adalah temuan
 2. Ukuran window besar (3) menangkap hubungan lebih baik, tetapi bisa memperkenalkan kata-kata yang kurang relevan.
 3. Dimensi embedding yang lebih tinggi (200) memberikan hasil yang lebih akurat dalam menemukan kata-kata yang mirip.
 4. Evaluasi menggunakan kata kunci seperti "technology" menunjukkan bahwa model dapat menemukan kata-kata yang relevan seperti "innovation", "AI", dan "software".
+
 Secara keseluruhan, window size = 2 dan embedding_dim = 100 memberikan keseimbangan terbaik antara spesifisitas dan generalisasi.
 
